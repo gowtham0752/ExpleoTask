@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
           package="com.expleo.task">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android"/>
+
+    <uses-feature
+            android:name="android.hardware.camera"
+            android:required="true"/>
+
 
     <application
             android:allowBackup="true"
@@ -13,6 +20,13 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+
+        <activity
+                android:hardwareAccelerated="true"
+                android:name="com.journeyapps.barcodescanner.CaptureActivity"
+                android:screenOrientation="fullSensor"
+                tools:replace="screenOrientation"/>
+
         <activity android:name=".Activity.ProfilePictureActivity">
         </activity>
         <activity android:name=".Activity.MainActivity">
