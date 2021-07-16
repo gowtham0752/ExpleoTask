@@ -76,13 +76,13 @@ class ProfilePictureActivity : AppCompatActivity() {
     }
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        when (requestCode) {
-            PERMISSION_REQUEST_CODE -> if (grantResults.size> 0 && grantResults[0] === PackageManager.PERMISSION_GRANTED) {
-                uploadProfile()
+                    super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+                    when (requestCode) {
+                        PERMISSION_REQUEST_CODE -> if (grantResults.size> 0 && grantResults[0] === PackageManager.PERMISSION_GRANTED) {
+                            uploadProfile()
 
-            } else {
-                Toast.makeText(applicationContext,"Permission not granted", Toast.LENGTH_LONG).show()
+                        } else {
+                            Toast.makeText(applicationContext,"Permission not granted", Toast.LENGTH_LONG).show()
             }
 
             PERMISSION_REQUEST_CODE_STORAGE -> if (grantResults.size> 0 && grantResults[0] === PackageManager.PERMISSION_GRANTED) {
