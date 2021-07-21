@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "805351478938",
+    "project_id": "test-44b0e",
+    "storage_bucket": "test-44b0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805351478938:android:6a4d0fdcb0edc79992f123",
+        "android_client_info": {
+          "package_name": "com.expleo.task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805351478938-f6il1qth8k9073g87n84fbs9e7c98us2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB2VwQUxHUQfCJESplqddCHKYRMThJhvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805351478938-f6il1qth8k9073g87n84fbs9e7c98us2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

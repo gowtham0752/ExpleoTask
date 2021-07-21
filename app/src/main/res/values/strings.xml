@@ -4,4 +4,5 @@
     <string name="bottom_sheet_option_camera">Use Camera</string>
     <string name="bottom_sheet_option_gallery">Upload from Gallery</string>
     <string name="bottom_sheet_option_remove_photo">Remove Photo</string>
+    <string name="crash_toast_text">Crash Report</string>
 </resources>
